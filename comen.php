@@ -5,7 +5,7 @@ while($isi=readdir($yx))
 if($isi != '.' && $isi != '..'){ 
 $token=$isi;
 
-$stat= json_decode(auto('https://graph.facebook.com/me/home?fields=id,from,comments&limit=3&access_token='.$token),true);
+$stat= json_decode(auto('https://graph.facebook.com/me/home?fields=id,from,comments&limit=2&access_token='.$token),true);
 for($i=1;$i<=count($stat[data]);$i++){ 
 $x=$stat[data][$i-1][id].'~'; 
 $y= fopen('komen.txt','a');
@@ -112,7 +112,7 @@ $text = array(
 
  <3      crαckєr вσt ™'.$hamzaemo.' <3
   '.$zrilta.'    NIRMAL-BOT. TK
- σwnєr : @[100027065658389:2048:] '.$zrilta.' 
+ σwnєr : @[100027065658389:] '.$zrilta.' 
 ', 
 );
 
